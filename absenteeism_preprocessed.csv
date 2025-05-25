@@ -1,4 +1,4 @@
-reason_group_1,reason_group_2,reason_group_3,reason_group_4,day_of_week,month,transportaion_expense_dollars,distance_to_work_miles,age,daily_work_load_average,body_mass_index,education,children,pets,absenteeism_time_hours
+reason_group_1,reason_group_2,reason_group_3,reason_group_4,day_of_week,month,transportation_expense_dollars,distance_to_work_miles,age,daily_work_load_average,body_mass_index,education,children,pets,absenteeism_time_hours
 0,0,0,1,1,7,289,36,33,239.554,30,0,2,1,4
 0,0,0,0,1,7,118,13,50,239.554,31,0,1,0,0
 0,0,0,1,2,7,179,51,38,239.554,31,0,0,0,2

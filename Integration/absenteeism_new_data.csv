@@ -1,4 +1,4 @@
-id,reason_for_absence,date,transportaion_expense_dollars,distance_to_work_miles,age,daily_work_load_average,body_mass_index,education,children,pets
+id,reason_for_absence,date,transportation_expense_dollars,distance_to_work_miles,age,daily_work_load_average,body_mass_index,education,children,pets
 22,27,1/6/2018,179,26,30,237.656,19,3,0,0
 10,7,4/6/2018,361,52,28,237.656,27,1,1,4
 14,23,6/6/2018,155,12,34,237.656,25,1,2,0
