@@ -2,7 +2,6 @@
 
 This repository contains a machine learning pipeline for building, evaluating, and deploying a **logistic regression model** that predicts whether an employee is likely to be **excessively absent from work** (defined as more than 3 hours in a single instance).
 
----
 
 ## Project Objective
 
@@ -12,7 +11,6 @@ The goal is to create a data-driven model to:
 * **Predict future absenteeism** likelihood.
 * **Provide insights** into what features most strongly influence absenteeism behavior.
 
----
 
 ## Repository Structure
 
@@ -26,8 +24,6 @@ absenteeism-prediction-model
 ├── absenteeism_module.py   <- Python module for loading model and predicting new data
 └── requirements.txt        <- Required Python libraries
 ```
-
----
 
 ## Key Features & Workflow
 
@@ -63,7 +59,6 @@ absenteeism-prediction-model
   * Generate **probabilities** and **binary predictions** for excessive absenteeism.
   * Output results in a ready-to-use DataFrame for further analysis or visualization (e.g., in Tableau).
 
----
 
 ## Output Columns Explained
 
@@ -75,7 +70,6 @@ After running the integration module, you receive a prediction DataFrame with tw
   * `1` = predicted absenteeism is **likely** (probability ≥ 0.5)
   * `0` = predicted absenteeism is **not likely**
 
----
 
 ## How to Use
 
@@ -104,15 +98,12 @@ predicted_results.to_csv('absenteeism_predictions.csv', index=False)
 print(predicted_results)
 ```
 
----
-
 ## Next Steps
 
 * Integrate with business dashboards (e.g., **Tableau**) for live monitoring.
 * Improve model performance using advanced classifiers, feature engineering, or additional data.
 * Analyze misclassifications and refine the feature set further.
 
----
 
 ## Technologies Used
 
@@ -121,6 +112,3 @@ print(predicted_results)
 * Scikit-learn & Statsmodels
 * Pickle for model serialization
 * Jupyter Notebook
-
----
-
