@@ -100,7 +100,7 @@ print(predicted_results)
 
 ## Next Steps
 
-* Integrate with business dashboards (e.g., **Tableau**) for live monitoring.
+* Integrate with business dashboards (e.g., **Tableau**) for analysis and presentation.
 * Improve model performance using advanced classifiers, feature engineering, or additional data.
 * Analyze misclassifications and refine the feature set further.
 
