@@ -1,6 +1,6 @@
 <h1 align='center'>Logistic Regression Model for Predicting Employee Absenteeism</h1>
 
-This repository contains a machine learning pipeline for building, evaluating, and integrating a **logistic regression model** that predicts whether an employee is likely to be **excessively absent from work** (defined as more than 3 hours in a single instance).
+This repository contains a machine learning pipeline for building, evaluating, and integrating a **logistic regression model** that predicts whether an employee is likely to be **excessively absent from work,** with predictions visualized in **Tableau**. The final result is an **integration-ready and portable module** for predicting new records.
 
 
 ## Project Objective
@@ -10,7 +10,6 @@ The goal is to create a data-driven model to:
 * **Identify high-risk employees** based on various personal, work-related, and behavioral factors.
 * **Predict future absenteeism** probability.
 * **Provide insights** into what features most strongly influence absenteeism behavior.
-* **Create an integration-ready module** for predicting new records.
 
 
 ## Repository Structure
