@@ -46,7 +46,7 @@ class absenteeism_model:
     """
     def __init__(self, model_file, scaler_file):
         # Load model and scaler from disk
-        with open('model', 'rb') as model_f, open('scaler', 'rb') as scaler_f:
+        with open(model_file, 'rb') as model_f, open(scaler_file, 'rb') as scaler_f:
             self.reg = pickle.load(model_f)
             self.scaler = pickle.load(scaler_f)
             self.data = None
