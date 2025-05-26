@@ -1,0 +1,6 @@
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+statsmodels==0.14.2
+jupyterlab==4.1.5
+
