@@ -8,8 +8,9 @@ This repository contains a machine learning pipeline for building, evaluating, a
 The goal is to create a data-driven model to:
 
 * **Identify high-risk employees** based on various personal, work-related, and behavioral factors.
-* **Predict future absenteeism** likelihood.
+* **Predict future absenteeism** probability.
 * **Provide insights** into what features most strongly influence absenteeism behavior.
+* **Create an integration-ready module** for predicting new records.
 
 
 ## Repository Structure
