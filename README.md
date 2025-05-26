@@ -15,14 +15,26 @@ The goal is to create a data-driven model to:
 ## Repository Structure
 
 ```bash
-absenteeism-prediction-model
-├── README.md               <- Project overview and instructions
-│   └── absenteeism_data.csv   <- Preprocessed dataset used for training
-│   ├── 1_Data_Preprocessing.ipynb       <- Initial data cleaning (external)
-│   ├── 2_Model_Training.ipynb           <- Model building, evaluation, and serialization
-│   └── 3_Absenteeism_Integration.ipynb  <- Loading the model & predicting new data
-├── absenteeism_module.py   <- Python module for loading model and predicting new data
-└── requirements.txt        <- Required Python libraries
+absenteeism_project/
+├── code/
+│   ├── 1_preprocessing.ipynb  # Initial data cleaning
+│   └── 2_logistic_regression_modeling.ipynb  # Model building, evaluation, and serialization
+├── data/
+│   ├── absenteeism_raw_data.csv
+│   └── absenteeism_preprocessed.csv
+├── integration/
+│   ├── model_integration.ipynb
+│   ├── scripts/
+│   │   └── absenteeism_module.py  # Python module for loading and predicting new data         
+│   ├── model_artifacts/                   
+│   │   ├── model
+│   │   └── scaler
+│   └── data/
+│       ├── absenteeism_new_data.csv
+│       └── absenteeism_predictions.csv
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 ## Key Features & Workflow
@@ -39,11 +51,11 @@ absenteeism-prediction-model
 * Trained a **logistic regression** model using `Scikit-learn` and interpreted with `Statsmodels`.
 * Evaluated coefficients and **odds ratios** to identify the most influential features.
   
-<img src="Model_tables/2_strongest_predictors.png" alt="Strongest Predictors" width="65%"/>
+<img src="visuals/model_tables/2_strongest_predictors.png" alt="Strongest Predictors" width="65%"/>
   
 * Applied **backward elimination** to simplify the model and remove statistically insignificant predictors.
 
-<img src="Model_tables/4_model_refinement_metrics.png" alt="Model Refinement Metrics" width="60%"/>
+<img src="visuals/model_tables/4_model_refinement_metrics.png" alt="Model Refinement Metrics" width="60%"/>
 
 
 ### 3. **Model Evaluation**
@@ -77,7 +89,7 @@ After running the integration module, you receive a prediction DataFrame with tw
   * `0` = predicted absenteeism is **not likely**
 
 
-## How to Use
+## Make Predictions Using the Trained Model
 
 1. Clone the repository:
 
@@ -95,14 +107,19 @@ pip install -r requirements.txt
 3. Run the integration notebook or import the module in a Python script:
 
 ```python
-from Absenteeism_Module import *
+import sys
+sys.path.append('./integration/scripts')
+from absenteeism_module import *
 
-model = absenteeism_model('model', 'scaler')
-model.load_and_clean_data('absenteeism_new_data.csv')
-predicted_results  = model.predicted_outputs()
-predicted_results.to_csv('absenteeism_predictions.csv', index=False)
-print(predicted_results)
+model = absenteeism_model('integration/model_artifacts/model', 'integration/model_artifacts/scaler')
+model.load_and_clean_data('integration/data/absenteeism_new_data.csv')
+
+predicted_results = model.predicted_outputs()
+predicted_results.to_csv('integration/data/absenteeism_predictions.csv', index=False)
 ```
+> Notes:
+> * Ensure all relative paths are correct from your working directory.
+> * Ensure the new dataset format matches the structure used in training.
 
 ## Next Steps
 
