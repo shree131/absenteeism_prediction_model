@@ -38,7 +38,13 @@ absenteeism-prediction-model
 
 * Trained a **logistic regression** model using `Scikit-learn` and interpreted with `Statsmodels`.
 * Evaluated coefficients and **odds ratios** to identify the most influential features.
+  
+<img src="Model_tables/2_strongest_predictors.png" alt="Strongest Predictors" width="65%"/>
+  
 * Applied **backward elimination** to simplify the model and remove statistically insignificant predictors.
+
+<img src="Model_tables/4_model_refinement_metrics.png" alt="Model Refinement Metrics" width="60%"/>
+
 
 ### 3. **Model Evaluation**
 
