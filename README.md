@@ -131,7 +131,7 @@ predicted_results.to_csv('integration/data/absenteeism_predictions.csv', index=F
 
 
 ## Dashboard Highlights
-
+<img src="visuals/dashboards/dashboard_image.png" alt="Prediction dashboard image" width="85%"/>
 
 - Visual breakdown of absenteeism risk by:
   - Medical reasons
