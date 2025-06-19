@@ -156,3 +156,6 @@ predicted_results.to_csv('integration/data/absenteeism_predictions.csv', index=F
 * Pickle for model serialization
 * Jupyter Notebook
 * Power BI for visualization
+
+---
+*© 2024 All rights are reserved.*
