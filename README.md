@@ -80,8 +80,8 @@ absenteeism_project/
 * Developed a reusable Python class `absenteeism_model` to:
 
   * Load and preprocess new datasets.
-  * Generate **probabilities** and **binary predictions** for excessive absenteeism.
-  * Output results in a ready-to-use DataFrame for further analysis or visualization (e.g., in Power BI).
+  * Generate **probabilities** and **predictions** for excessive absenteeism.
+  * Output is a ready-to-use DataFrame for further analysis and visualization (e.g., in Power BI).
 
 
 
@@ -143,7 +143,7 @@ predicted_results.to_csv('integration/data/absenteeism_predictions.csv', index=F
 
 ## Next Steps
 
-* Integrate with business dashboards (e.g., Power BI or Tableau) for analysis and presentation.
+* Integrate with business dataset and dashboards (e.g., Power BI or Tableau) for analysis and presentation.
 * Improve model performance using advanced classifiers, feature engineering, or additional data.
 * Analyze misclassifications and refine the feature set further.
 
